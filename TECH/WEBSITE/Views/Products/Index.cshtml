@@ -1,0 +1,197 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles{
+    <link href="~/web/css/sanpham.css" rel="stylesheet">
+}
+<div class="box-products">
+    <div class="box-image-head">
+        <div class="container">
+            <p class="txt-text">SẢN PHẨM</p>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="container">
+            <nav class="woocommerce-breadcrumb"><a href="/home">Trang chủ</a>&nbsp;/&nbsp;Sản phẩm</nav>
+            <form class="woocommerce-ordering" method="get">
+                <select name="orderby" class="orderby">
+                    <option value="popularity">Phổ biến nhất</option>
+                    <option value="date" selected="selected">Mới nhất</option>
+                    <option value="price">Giá thấp đến cao</option>
+                    <option value="price-desc">Giá cao xuống thấp</option>
+                </select>
+                <input type="hidden" name="paged" value="1">
+                <input type="hidden" name="fbclid" value="IwAR2Py_aKj8B6yBk9I-I4pK_7PZO0HpzhJO8diAg4cI6wMJwXlXNma-stsdk">
+            </form>
+            <div class="box-content-left-top">
+                <div class="row">
+                    <div class="custom-col-left custom-col-sm">
+                        <div class="box-content-left">
+                            <div id="woocommerce_product_search-2" class="widget woocommerce widget_product_search">
+                                <h3 class="widget-title">Tìm kiếm sản phẩm</h3>
+                                <form role="search" method="get" class="woocommerce-product-search">
+                                    <label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm kiếm cho:</label>
+                                    <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Tìm sản phẩm…" value="" name="s">
+                                    <button type="submit" value="Tìm kiếm">Tìm kiếm</button>
+                                    <input type="hidden" name="post_type" value="product">
+                                </form>
+                            </div>
+                            @*<div id="woocommerce_price_filter-2" class="widget woocommerce widget_price_filter">
+                                <h3 class="widget-title">Lọc theo giá</h3>
+                                <form method="get" action="https://green.hap.vn/san-pham/">
+                                    <div class="price_slider_wrapper">
+                                        <div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="">
+                                            <input type="range" min="1" max="100" value="50">
+                                            <span class="range-max"></span>
+                                        </div>
+                                        <div class="price_slider_amount">
+                                            <input type="text" id="min_price" name="min_price" value="14500" data-min="14500" placeholder="Giá thấp nhất" style="display: none;">
+                                            <input type="text" id="max_price" name="max_price" value="499000" data-max="499000" placeholder="Giá cao nhất" style="display: none;">
+                                            <button type="submit" class="button">Lọc</button>
+                                            <div class="price_label" style="">
+                                                Giá: <span class="from">14.500&nbsp;₫</span> — <span class="to">499.000&nbsp;₫</span>
+                                            </div>
+                                            <input type="hidden" name="fbclid" value="IwAR2Py_aKj8B6yBk9I-I4pK_7PZO0HpzhJO8diAg4cI6wMJwXlXNma-stsdk">
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>*@
+                            <div id="woocommerce_product_categories-2" class="widget woocommerce widget_product_categories">
+                                <h3 class="widget-title">Danh mục sản phẩm</h3>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-item-204"><a href="javascript:void(0)">Đồ trang trí</a></li>
+                                    <li class="cat-item cat-item-205"><a href="javascript:void(0)">Tái chế</a></li>
+                                    <li class="cat-item cat-item-192"><a href="javascript:void(0)">Thời trang</a></li>
+                                    <li class="cat-item cat-item-26"><a href="javascript:void(0)">Phụ kiện</a></li>
+                                    <li class="cat-item cat-item-50"><a href="javascript:void(0)">Đồ chơi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-right">
+                        <div class="box-content-right">
+                            @*<div class="item-product">
+                                <div class="item-content">
+                                    <a href="" class="custom-box">
+                                        <div class="thume-img">
+                                            <span class="onsale"></span>
+                                        </div>
+                                        <div class="box-text-content">
+
+                                            <h2 class="woocommerce-loop-product__title">Đường ăn kiêng, đường giảm cân (Nhập khẩu Đức)</h2>
+                                            <span class="price"><del><span class="woocommerce-Price-amount amount">110.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="woocommerce-Price-amount amount giam">85.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="item-product">
+                                <div class="item-content">
+                                    <a href="" class="custom-box">
+                                        <div class="thume-img">
+                                            <span class="onsale"></span>
+                                        </div>
+                                        <div class="box-text-content">
+
+                                            <h2 class="woocommerce-loop-product__title">Đường ăn kiêng, đường giảm cân (Nhập khẩu Đức)</h2>
+                                            <span class="price"><del><span class="woocommerce-Price-amount amount">110.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="woocommerce-Price-amount amount giam">85.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="item-product">
+                                <div class="item-content">
+                                    <a href="" class="custom-box">
+                                        <div class="thume-img">
+                                            <span class="onsale"></span>
+                                        </div>
+                                        <div class="box-text-content">
+
+                                            <h2 class="woocommerce-loop-product__title">Đường ăn kiêng, đường giảm cân (Nhập khẩu Đức)</h2>
+                                            <span class="price"><del><span class="woocommerce-Price-amount amount">110.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="woocommerce-Price-amount amount giam">85.000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>*@
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/web/plugins/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            GetDataPaging();
+
+        })    
+
+        function GetDataPaging() {
+            var _data = {
+                CategoryId: 18,
+                PageIndex: 1,
+                PageSize: 12
+            };
+            $.ajax({
+                url: '/Admin/Product/GetAllProductsPaging',
+                type: 'GET',
+                data: _data,
+                dataType: 'json',
+                beforeSend: function () {
+                    //Loading('show');
+                },
+                complete: function () {
+
+                },
+                success: function (response) {
+                    RenderTableHtml(response.data.Results);
+                }
+            })
+
+        };
+
+        function RenderTableHtml(data) {
+            var html = "";
+            for (var i = 0; i < data.length; i++) {
+                var item = data[i];
+                html += "<div class='item-product'>"+
+                    "<div class='item-content' >" +
+                    "<a href='/Products/ProductDetail?id=" + item.Id + "' class='custom-box'>"+
+                    "<div class='thume-img'>" +
+                    "<img src='/web/img/product-image/" + item.UrlImage +"' with='100%' height='100%'/>"+
+                                "<span class='onsale'></span>"+
+                            "</div>"+
+                                    "<div class='box-text-content'>" +
+                    "<h2 class='woocommerce-loop-product__title'>" + item.Name + "</h2>" +
+                    "<span class='price'><del><span class='woocommerce-Price-amount amount'>" + (item.Price != null ? item.Price : 4000) + "&nbsp;<span class='woocommerce-Price-currencySymbol'>₫</span></span></del> <span class='woocommerce-Price-amount amount giam'>" + (item.Price != null ? item.Price : 3000+400) + "&nbsp;<span class='woocommerce-Price-currencySymbol'>₫</span></span></span>" +
+                "</div>" +
+                    "</a>" +
+                    "</div>" +
+                    "</div >";
+            }
+            //return html;
+            $(".box-content-right").append(html);
+
+
+        }
+
+    </script>
+}
+
