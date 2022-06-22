@@ -16,10 +16,10 @@ namespace WEBSITE.Service
         PagedResult<ProductModelView> GetAllPaging(ProductViewModelSearch productViewModelSearch);
         ProductModelView GetById(int id);
         List<ProductModelView> GetProductByUserId(int userId);
-        List<TelecomModelView> GetTelecomByUserId(int userId);
+        //List<TelecomModelView> GetTelecomByUserId(int userId);
         int Add(ProductModelView view);
         bool AddUserPointProduct(int productId,int userId);
-        bool AddUserTelecom(int userId, TelecomModelView telecomModelView);
+        //bool AddUserTelecom(int userId, TelecomModelView telecomModelView);
         bool Update(ProductModelView view);
         bool Deleted(int id);
         void Save();
@@ -66,28 +66,28 @@ namespace WEBSITE.Service
             }
             return null;
         }
-        public List<TelecomModelView> GetTelecomByUserId(int userId)
-        {
-            var model = _telecomRepository.FindAll().Where(p => p.UserId == userId).Select(t=> new TelecomModelView() { 
-            UserId=t.UserId,
-            Name = t.Name,
-            Exchange = t.Exchange,
-            Point = t.Point            
-            }).ToList();
-            //if (model != null && model.Count > 0)
-            //{                
-            //    foreach (var item in model)
-            //    {
-            //        if (!item.Point.HasValue)
-            //        {
-            //            item.Point.Value = 0;
-            //        }
-            //    }
-            //    return lstProduct;
-            //}
-            return model;
+        //public List<TelecomModelView> GetTelecomByUserId(int userId)
+        //{
+        //    var model = _telecomRepository.FindAll().Where(p => p.UserId == userId).Select(t=> new TelecomModelView() { 
+        //    UserId=t.UserId,
+        //    Name = t.Name,
+        //    Exchange = t.Exchange,
+        //    Point = t.Point            
+        //    }).ToList();
+        //    //if (model != null && model.Count > 0)
+        //    //{                
+        //    //    foreach (var item in model)
+        //    //    {
+        //    //        if (!item.Point.HasValue)
+        //    //        {
+        //    //            item.Point.Value = 0;
+        //    //        }
+        //    //    }
+        //    //    return lstProduct;
+        //    //}
+        //    return model;
 
-        }
+        //}
         public bool AddUserPointProduct(int productId,int userId)
         {
             try
@@ -107,27 +107,27 @@ namespace WEBSITE.Service
                 return false;
             }
         }
-        public bool AddUserTelecom(int userId,TelecomModelView telecomModelView)
-        {
-            try
-            {
-                var appUserProduct = new Telecom()
-                {
-                    UserId = userId,
-                    Name = telecomModelView.Name,
-                    Exchange = telecomModelView.Exchange,
-                    Point = telecomModelView.Point
-                };
-                _telecomRepository.Add(appUserProduct);
+        //public bool AddUserTelecom(int userId,TelecomModelView telecomModelView)
+        //{
+        //    try
+        //    {
+        //        var appUserProduct = new Telecom()
+        //        {
+        //            UserId = userId,
+        //            Name = telecomModelView.Name,
+        //            Exchange = telecomModelView.Exchange,
+        //            Point = telecomModelView.Point
+        //        };
+        //        _telecomRepository.Add(appUserProduct);
 
-                Save();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
+        //        Save();
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return false;
+        //    }
+        //}
         public List<ProductModelView> GetProductByUserId(int userId)
         {
             var model = _appUserProductRepository.FindAll().Where(p => p.AppUserId == userId).ToList();

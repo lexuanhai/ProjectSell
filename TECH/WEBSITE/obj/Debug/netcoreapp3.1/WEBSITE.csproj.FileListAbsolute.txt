@@ -775,7 +775,6 @@ D:\ProjectWord\ProjectSell\TECH\WEBSITE\bin\Debug\netcoreapp3.1\runtimes\win-x86
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\WEBSITE.csprojAssemblyReference.cache
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\WEBSITE.AssemblyInfoInputs.cache
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\WEBSITE.AssemblyInfo.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\WEBSITE.csproj.CoreCompileInputs.cache
@@ -794,19 +793,7 @@ D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admi
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AppUsers\Index.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AppUsers\ViewLogin.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AppUsers\_Add.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Brands\Index.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Brands\_AddUpdate.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Brands\_Search.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\_AddUpdate.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\_Search.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\AddOrUpdate.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\_AddUpdate.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\_Search.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Role\Index.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Role\_Add.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\Components\SideBar\Default.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\Error.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
@@ -814,7 +801,6 @@ D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admi
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Views\AcountUser\Login.cshtml.g.cs
-D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Views\ExchangePoints\Index.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 D:\ProjectWord\ProjectSell\TECH\WEBSITE\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs

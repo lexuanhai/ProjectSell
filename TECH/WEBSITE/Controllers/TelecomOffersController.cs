@@ -54,42 +54,42 @@ namespace WEBSITE.Controllers
         {
             return View();
         }
-        public JsonResult AddUserTelecom(int userId, TelecomModelView telecomModelView)
-        {
-            // Cập nhật trong bảng UserProduct
-            var result = _productService.AddUserTelecom(userId, telecomModelView);
+        //public JsonResult AddUserTelecom(int userId, TelecomModelView telecomModelView)
+        //{
+        //    // Cập nhật trong bảng UserProduct
+        //    var result = _productService.AddUserTelecom(userId, telecomModelView);
 
-            if (result)
-            {
-                var userString = _httpContextAccessor.HttpContext.Session.GetString("UserInfor");
-                var _user = new UserModelView();
-                if (userString != null)
-                {
-                    _user = JsonConvert.DeserializeObject<UserModelView>(userString);
-                    if (_user.TotalPoint.HasValue && _user.TotalPoint.Value > 0)
-                    {
-                        int point = _user.TotalPoint.Value - telecomModelView.Point.Value;
-                        if (point <=0)
-                        {
-                            point = 0;
-                        }
-                        _userService.UpdatePointUser(userId, point);
-                        _user.TotalPoint = point;
+        //    if (result)
+        //    {
+        //        var userString = _httpContextAccessor.HttpContext.Session.GetString("UserInfor");
+        //        var _user = new UserModelView();
+        //        if (userString != null)
+        //        {
+        //            _user = JsonConvert.DeserializeObject<UserModelView>(userString);
+        //            if (_user.TotalPoint.HasValue && _user.TotalPoint.Value > 0)
+        //            {
+        //                int point = _user.TotalPoint.Value - telecomModelView.Point.Value;
+        //                if (point <=0)
+        //                {
+        //                    point = 0;
+        //                }
+        //                _userService.UpdatePointUser(userId, point);
+        //                _user.TotalPoint = point;
 
-                        _httpContextAccessor.HttpContext.Session.SetString("UserInfor", JsonConvert.SerializeObject(_user));
-                    }
+        //                _httpContextAccessor.HttpContext.Session.SetString("UserInfor", JsonConvert.SerializeObject(_user));
+        //            }
 
-                }
+        //        }
 
-            }
+        //    }
 
 
-            return Json(new
-            {
-                data = result
-            });
+        //    return Json(new
+        //    {
+        //        data = result
+        //    });
 
-        }
+        //}
 
 
 

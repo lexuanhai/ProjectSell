@@ -9,6 +9,6 @@ namespace WEBSITE.Areas.Admin.Models
     public class CartModelView
     {
        public List<ProductModelView> Products { get; set; }
-        public List<TelecomModelView> Telecoms { get; set; }
+        //public List<TelecomModelView> Telecoms { get; set; }
     }
 }
