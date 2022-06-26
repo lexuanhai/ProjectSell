@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SIti3v5nh4Gq4qXXq5R0fwbXUYtM2P6wx/MjdkURcQFgp9er9ts2YbLDHC2TUPEwDI8lARUis1nIObfkm+zTdA==",
+  "dgSpecHash": "fPe/a3bvzM3ifr7odm83G1VrtAegbk7nhPZASP6AYd5NVffnu1EJJ/1ZgGlYn0bvrS6dYmQ/hNOZu5bskX1XgQ==",
   "success": true,
-  "projectFilePath": "E:\\c#\\API\\TECH\\API\\API.csproj",
+  "projectFilePath": "E:\\ProjectJob\\ProjectSell\\TECH\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\emcua\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\emcua\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\emcua\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",
     "C:\\Users\\emcua\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
