@@ -27,6 +27,29 @@ namespace MyWebApiApp.Controllers
             _appSettings = optionsMonitor.CurrentValue;
         }
 
+        [HttpPost("Create")]
+        public IActionResult Validate(LoginModel model)
+        {
+            var user = _context.NguoiDungs.SingleOrDefault(p => p.UserName == model.UserName && model.Password == p.Password);
+            if (user == null)
+            {
+                return Ok(new ApiResponse
+                {
+                    Success = false,
+                    Message = "Invalid username/password"
+                });
+            }
+
+            //cấp token
+
+            return Ok(new ApiResponse
+            {
+                Success = true,
+                Message = "Authenticate success",
+                Data = GenerateToken(user)
+            });
+        }
+
         [HttpPost("Login")]
         public IActionResult Validate(LoginModel model)
         {
