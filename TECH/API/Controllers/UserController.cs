@@ -11,6 +11,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Service;
+using Domain;
 
 namespace MyWebApiApp.Controllers
 {
@@ -20,15 +22,20 @@ namespace MyWebApiApp.Controllers
     {
         private readonly MyDbContext _context;
         private readonly AppSetting _appSettings;
+        private readonly IAppUserService _appUserService;
 
-        public UserController(MyDbContext context, IOptionsMonitor<AppSetting> optionsMonitor)
+
+        public UserController(MyDbContext context, 
+            IOptionsMonitor<AppSetting> optionsMonitor,
+            IAppUserService appUserService)
         {
             _context = context;
             _appSettings = optionsMonitor.CurrentValue;
+            _appUserService = appUserService;
         }
 
-        [HttpPost("Login")]
-        public IActionResult Validate(LoginModel model)
+        [HttpPost("LoginIn")]
+        public IActionResult LoginIn(LoginModel model)
         {
             var user = _context.NguoiDungs.SingleOrDefault(p => p.UserName == model.UserName && model.Password == p.Password);
             if (user == null)
@@ -47,6 +54,23 @@ namespace MyWebApiApp.Controllers
                 Success = true,
                 Message = "Authenticate success",
                 Data = GenerateToken(user)
+            });
+        }
+        [HttpPost("Register")]
+        public IActionResult Register(AppUser model)
+        {
+            var idUser = _appUserService.CreateUser(model);
+            if (idUser > 0)
+            {
+                return Ok(new ApiResponse
+                {
+                    Success = true,
+                    Data = idUser.ToString()
+                });
+            }
+            return Ok(new ApiResponse
+            {
+                Success = false,                
             });
         }
 

@@ -11,6 +11,11 @@ using Service;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddMvc().AddJsonOptions(o =>
+{
+    o.JsonSerializerOptions.PropertyNamingPolicy = null;
+    o.JsonSerializerOptions.DictionaryKeyPolicy = null;
+});
 
 builder.Services.AddControllers();
 
@@ -29,7 +34,9 @@ var secretKey = builder.Configuration["AppSettings:SecretKey"];
 var secretKeyBytes = Encoding.UTF8.GetBytes(secretKey);
 
 builder.Services.AddScoped<ICategoryReponsitory, CategoryReponsitory>();
+builder.Services.AddScoped<IAppUserReponsitory, AppUserReponsitory>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IAppUserService, AppUserService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(opt =>

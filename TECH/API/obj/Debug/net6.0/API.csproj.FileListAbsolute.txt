@@ -131,3 +131,4 @@ E:\ProjectJob\ProjectSell\TECH\API\obj\Debug\net6.0\refint\API.dll
 E:\ProjectJob\ProjectSell\TECH\API\obj\Debug\net6.0\API.pdb
 E:\ProjectJob\ProjectSell\TECH\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 E:\ProjectJob\ProjectSell\TECH\API\obj\Debug\net6.0\ref\API.dll
+E:\ProjectJob\ProjectSell\TECH\API\bin\Debug\net6.0\Newtonsoft.Json.dll

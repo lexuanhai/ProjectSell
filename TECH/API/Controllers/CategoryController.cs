@@ -1,5 +1,6 @@
 ﻿using API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Service;
 
 namespace API.Controllers
@@ -22,7 +23,7 @@ namespace API.Controllers
             {
                 Success = true,
                 Message = "success",
-                Data = data
+                Data = JsonConvert.SerializeObject(data)
             });
         }
 
